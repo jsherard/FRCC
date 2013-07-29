@@ -1,0 +1,11 @@
+Design Rules
+1. Design your database conceptually first (ERD, modeling, sketch it out on paper)
+2. Every entity deserves it's own table - identify entities, relationships, attributes
+3. Break your data down into the smallest logical parts.
+4. enforce referential integrity (primary key/foreign key) - normalization (1NF, 2NF, 3NF)
+
+Best Practices for Managing a Database
+1. Back up your database regularly
+2. Only allow the least amount of priveleges required (admin, create/read/update/delete)
+3. Have an information lifecycle management strategy (ILM) to manage data, growth, future storage needs, etc.
+

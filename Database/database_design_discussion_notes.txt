@@ -1,0 +1,115 @@
+Website:  http://en.tekstenuitleg.net/articles/software/database-design-tutorial/intro.html
+Title: Database Design Tutorial
+
+
+Key Concepts:
+tables --> contain data
+tables --> relationships
+
+Design == integrity and maintainability
+
+SQL = structured query language (ie INSERT, SELECT, DELETE, ALTER, CREATE, etc)
+
+Relational Database Model
+ERD (Entity-Relationship Diagram)
+
+Database Design is independent of the underlying database
+
+Originally data was stored in flatfiles
+Relational enables fast and efficient retrieval of large quantities of data.
+
+Ted Codd invented the relational database model in the 1970s.
+RDBMS: Oracle, SQL Server, MySQL, DB2, Access
+
+Keys - 
+Primary Key - unique identifier
+Foreign Key - connected to Primary Key
+
+Data Redundancy = duplication of data (should be avoided in good database design)
+Constraining the Input - specify what sort of data is allowed
+Maintain data integrity - field properties, linking tables, setting constraints = increase in the reliability of your data
+
+The way you design your database has a direct effect on the queries you need to write to retrieve your data.
+With a well designed database you can write cleaner and easier SQL queries.
+
+The relational model is a standard.
+Database design is about identifying the relationships in your data and putting those on paper (or in a computer model)
+Database design is independent of the database system you are goin to use to implement your database.
+
+Primary Keys in everyday life:
+order number
+social security number
+invoice number
+customer ID
+product number
+
+Primary keys: identify data, is unique, number/datatype/string, composite keys, autonumbering (surrogate)
+
+Database design is a matter of storing what the entities are you want to store and which relationship exists between them.
+linking tables with foreign keys
+
+One to Many
+customers to orders
+one to many relationships require the use of two seperate tables
+modeled with two tables
+How many entities of B can belong to A?
+How many entities of A can belong to B?
+
+What single pieces of information belong to a customer?
+What single pieces of information belong to an order?
+
+Many to Many
+teachers and students
+multiple rows from A can correspond to multiple rows from B
+A many to many relationship is modeled with three tables.  Two source tables and one junction table. The primary key of the junction table A_B is a composite key.
+
+One to One
+Easily modeled in one table
+Normally having two seperate tables in a one-to-one relationship is considered bad practice
+
+Think about entities that exist and how they are related.
+Entity Relationship Diagram (ERD)
+The ERD is the result of the database design process.
+
+Entity = a thing
+Deserves it's own table
+
+Talk to your clients and figure out what data your system will be working with.
+
+IT specialists can get too academic about an entity and an actual table in the the database.
+Entity translates to table (in this tutorial)
+
+STEP 1:  Decide what entities
+SPEP 2:  Decide what relationships exist
+
+In database design - ask not whether a certain relationship exists at the moment but if a certain relationship is likely to exist in the future.
+
+In database design primary keys are usually underlined.
+
+The relational model comprises a number of rules that help you discover the correct relationships between data.  These rules are called 'normal forms'
+5 groups - 1NF, 2NF, 3NF, 4NF, 5NF (lowest to highest)
+
+Database Normalization
+-you can make complex data selections with relatively simple SQL
+-Data integrity
+-avoide redundant (duplicate) storage of data
+-scalability
+== order data in logical groups or sets, find relationships,minimize data redundancy
+
+1NF
+Primary Key: each table has a primary key, consisting of the smallest number of fields
+Atomicity: fields are not duplicated and each field contains only one value
+Raw order should not matter: The order of the rows in a table should not matter
+
+2NF
+Data redundancy: Non-primary keys must be dependent on the primary key
+
+3NF
+Transitive dependencies: there can be no transitive dependencies between fields in a table
+
+
+Conclusion:
+
+Identify entities and relationships (ERDs)
+on paper, independent of RDBMS
+

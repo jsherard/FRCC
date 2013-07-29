@@ -1,0 +1,4 @@
+Salesperson	1st Qtr	2nd Qtr	3rd Qtr	4th Qtr
+Donaldson	$16,732	$15,879	$16,662	$16,501
+Hale	$13,677	$14,097	$14,205	$16,157
+Wilson	$16,229	$22,433	$26,464	$18,077
