@@ -1,4 +1,4 @@
-﻿Build started 7/27/2013 3:11:57 PM.
+﻿Build started 7/30/2013 9:16:36 PM.
      1>Project "C:\Users\jsherard\Desktop\Now\FRCC\C++\Chapter 9\Chp09_Ex02\Chp09_Ex02\Chp09_Ex02.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Chp09_Ex02.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.60
+Time Elapsed 00:00:01.27
